@@ -5,14 +5,13 @@
     <xacro:include filename="$(find robotiq_gripper)/urdf/robotiq_85_gripper.transmission.xacro" />
     <xacro:property name="pi" value="3.14159"/>
     
-    
-    <xacro:macro name="robotiq_85_gripper" params="prefix parent origin_xyz origin_rpy">
-    <!--<xacro:macro name="robotiq_85_gripper" params="prefix parent *origin">-->
+
+    <xacro:macro name="robotiq_85_gripper" params="prefix parent *origin">
 
         <joint name="${prefix}robotiq_85_base_joint" type="fixed">
             <parent link="${parent}"/>
             <child link="${prefix}robotiq_85_base_link"/>
-            <origin xyz = "${origin_xyz}" rpy = "${origin_rpy}" />
+            <xacro:insert_block name="origin"/>
         </joint>
 
         <link name="${prefix}robotiq_85_base_link">

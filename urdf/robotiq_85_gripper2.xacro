@@ -10,8 +10,7 @@
     <link name="world"/>
 
     
-    <xacro:robotiq_85_gripper prefix="" parent="world" >
-        <origin xyz="0.0 0 0.0" rpy="0 0 0"/>
+    <xacro:robotiq_85_gripper prefix="" parent="world" origin_xyz="0 0 0" origin_rpy="0 0 0" >
     </xacro:robotiq_85_gripper>
 
 
