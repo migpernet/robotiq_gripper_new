@@ -1,3 +1,7 @@
+Lembrar de instalar o plugin:
+$ sudo apt-get update
+$ sudo apt-get install ros-noetic-roboticsgroup-upatras-gazebo-plugins
+
 No arquivo urdf para plugin mimmic adicionei esse trecho de script:
 
 <!-- adicionei o plugin para o robotiq_right_finger_joint -->
